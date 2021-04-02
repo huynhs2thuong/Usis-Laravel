@@ -1,0 +1,52 @@
+#modal-cart-member {
+	.modal-content {
+		background: $ffde94-color;
+		border: none;
+		border-radius: 0;
+		> .modal-header {
+			font-family: $font-secondary;
+			font-size: 2.5em;
+			border-bottom: none;
+		}
+		> .container-info-member {
+			background: #FAC437;
+			padding: 10px 20px;
+			> span {
+				text-transform: lowercase;
+				padding-right: 15px;
+				border-right: 1px solid black;
+				margin-right: 15px;
+				&:last-child {
+					border-right: none;
+					margin-right: 0;
+				}
+			}
+		}
+		> .modal-body {
+			padding: 10px 20px 0;
+			font-style: 0.9em;
+			.img-circle {
+				object-fit: cover;
+			}
+			.member-action {
+				font-size: 1.3em;
+				cursor: pointer;
+				margin: 0 10px;
+				vertical-align: middle;
+			}
+		}
+		> .modal-footer {
+			border-top: none;
+			> .btn {
+				font-family: $font-secondary;
+				color: white;
+				text-transform: uppercase;
+				padding: 5px 20px;
+				border: none;
+				&.btn-default {
+					background: #FAC437;
+				}
+			}
+		}
+	}
+}

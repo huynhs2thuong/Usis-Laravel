@@ -1,0 +1,79 @@
+/* ------------------------------------------------------------------------------------- 
+List */
+
+ul[class*="list-"]{list-style:outside none none}
+ul[class*="list-"] > li{ padding-left: 25px; position:relative; & + li { margin-top: 10px;} }
+ul[class*="list-"] > li:before { font-size:inherit; position:absolute; left:1px; font-family: 'icomoon' !important; }
+
+ul.list-check > li:before{content:"\e908";}
+ul.list-arrow > li:before{content:"\e07d";}
+
+
+
+
+ul[class*="list-"].primary > li::before{color:$colorPrimary}
+ul[class*="list-"].secondary > li::before{color:$colorSecondary}
+ul[class*="list-"].thirdary > li::before,
+ul.list-icon.thirdary > li>i{color:$colorThirdary}
+
+
+ul[class*="list-"].info > li::before{color:#19c8f3}
+ul[class*="list-"].success > li::before{color:#00a388}
+ul[class*="list-"].warning > li::before{color:#eea236}
+ul[class*="list-"].danger > li::before{color:#ff6239}
+
+
+ul[class*="list-"].square > li::before,
+ul[class*="list-"].round > li::before {
+    color:#fff !important;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    top: 1px;
+    width: 16px;
+}
+ul[class*="list-"].round > li::before { border-radius: 100%; }
+ul[class*="list-"].square.default > li::before,
+ul[class*="list-"].round.default > li::before{background-color:#333}
+ul[class*="list-"].square.primary > li::before,
+ul[class*="list-"].round.primary > li::before{background-color:$colorPrimary}
+ul[class*="list-"].square.info > li::before,
+ul[class*="list-"].round.info > li::before{background-color:#19c8f3}
+ul[class*="list-"].square.success > li::before,
+ul[class*="list-"].round.success > li::before{background-color:#00a388}
+ul[class*="list-"].square.warning > li::before,
+ul[class*="list-"].round.warning > li::before{background-color:#eea236}
+ul[class*="list-"].square.danger > li::before,
+ul[class*="list-"].round.danger > li::before{background-color:#ff6239}
+
+ul.list-border {
+	& > li
+	{
+		overflow: hidden; padding-left: 10px;
+		.title { float: left; margin-right: 20px; font-weight: 600; color: #59595B }
+		.value { display: block; overflow: hidden;}
+		& + li { border-top: 1px dashed #ACAFB1; padding-top: 15px; margin-top: 15px} 
+
+
+	}
+	&.title-230 > li .title { width: 230px;}
+	&.title-150 > li .title { width: 150px;}
+	&.title-full > li .title { display: block; float: none; margin: 0 0 20px;}
+
+	&-2 {
+		li {
+			padding-left: 0;
+			& + li { border-top: 1px solid #ACAFB1; padding-top: 15px; margin-top: 15px } 
+		}
+	}
+}
+
+ul.list-icon {
+	li {
+
+
+		&> i { position: absolute;left: 0;  top: 6px;    font-size: 20px;}
+	}
+}
+

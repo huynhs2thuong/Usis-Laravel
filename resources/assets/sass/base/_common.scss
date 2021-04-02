@@ -1,0 +1,180 @@
+.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.padding-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.padding-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.flex-box,
+.display-flex {
+    display: flex;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    width: 20%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.my-table {
+    display: table;
+    table-layout: fixed;
+}
+
+.vertical-align-absolute {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.center-all-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.img-full-width {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.max-width {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.max-width-px {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media > .media-left {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.shadow-bottom {
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.shadow-top {
+    box-shadow: inset 0 4px 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-all {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+    font: 2.8125rem/3.375rem $font-secondary;
+    text-transform: uppercase;
+}
+
+.banner {
+    position: relative;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    > .pop {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        width: 25rem;
+        height: 25rem;
+        align-items: center;
+    }
+    .vertical-center {
+        padding: 0 2rem;
+        width: 100%;
+        > h1 {
+            margin: 1rem 0;
+        }
+        > p {
+            font-size: 0.9375rem;
+            font-weight: 700;
+            margin: 2rem 0;
+        }
+        > .scroll-down {
+            padding: 0.5rem;
+            cursor: pointer;
+            > .fa {
+                animation: bounce 0.7s linear infinite;
+            }
+        }
+    }
+}
+
+/**
+ * Color
+ */
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-green {
+    color: green;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: $black;
+}
+
+.orange-light {
+    background-color: $orange-light;
+}

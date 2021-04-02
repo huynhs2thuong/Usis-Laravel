@@ -1,0 +1,40 @@
+<section>
+	<div class="container" style="margin-top: 25px;">
+		<h2 class="section-title text-center">@lang('page.home.countdown_title')</h2>
+		<div class="box-countdown">
+			<div class="clock" style="margin:2em;"></div>
+			<div class="message"></div>
+			<div style="margin-top:15px"><a href="@lang('page.home.countdown_href')" class="btn btn-white" title="@lang('page.home.countdown_atitle')">@lang('page.menu.learn_more')</a></div>
+		</div>
+		
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+
+			var _today = new Date()
+			var _finishdate = new Date("2019/11/21 17:00:00");			
+
+
+			var _time = Math.abs(_finishdate.getTime() - _today.getTime());			
+
+
+			var clock;
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(Math.ceil(_time / 1000));
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+	</div>
+</section>

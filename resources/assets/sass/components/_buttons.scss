@@ -1,0 +1,375 @@
+
+.btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; color: #0A517B;
+  vertical-align: middle;
+  @include transition(0.2s);
+  padding:  0 25px; 
+  border: none;   background-color: transparent; text-transform: uppercase;
+  &>.inner {
+    border-top: solid 2px $colorPrimary;
+    border-bottom: solid 2px $colorPrimary;
+     display: block; position: relative; z-index: 2;
+     @include transition(0.2s);
+     padding: 0 20px; line-height: 41px; 
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    top: 0;
+    @include transition(0.2s);
+
+  }
+  &:before {
+    border-top: solid 2px $colorPrimary;
+    border-right: solid 2px $colorPrimary;
+    width: 45px; height: 45px; right: 11px;
+  }
+  &:after {
+    border-bottom: solid 2px $colorPrimary;
+    border-left: solid 2px $colorPrimary;
+    width: 45px; height: 45px; left: 11px; 
+  }
+
+
+  // Height 
+
+  &-32 {
+    padding:  0 20px;
+    &>.inner { border-width: 1px; padding: 0 10px; line-height: 30px; }
+    &:before { border-width: 1px; width: 32px; height: 32px; right: 10px; }
+    &:after { border-width: 1px;  width: 32px; height: 32px; left: 10px; }
+  }
+
+  // Hover
+  &:hover {
+    &>.inner, &:before, &:after { border-color: $colorThirdary}
+  }
+
+  // Color
+  &-primary {
+    color:#fff; background-color: transparent !important; border-color: transparent !important;
+    &>.inner, &:before, &:after  { background-color: $colorPrimary; }
+    &:hover {
+      &>.inner, &:before, &:after { background-color: $colorThirdary} 
+    }
+  }
+
+  &-white {
+    color:$colorPrimary; background-color: transparent !important; border-color: transparent !important;
+    &>.inner, &:before, &:after  { background-color: #fff; border-color: #fff; }
+    &:hover {
+      color: #fff;
+      &>.inner, &:before, &:after { background-color: $colorThirdary} 
+    }
+  }
+
+
+
+  &-second {
+    color: $colorThirdary; background-color: transparent !important; border-color: transparent !important;
+    &>.inner, &:before, &:after  { background-color: $colorSecondary; border-color: $colorSecondary}
+    &:hover {
+      color: #fff;
+      &>.inner, &:before, &:after { background-color: $colorPrimary; border-color: $colorPrimary} 
+    }
+  }
+
+  &-thirdary {
+    color:#fff; background-color: transparent !important; border-color: transparent !important;
+    &>.inner, &:before, &:after  { background-color: $colorThirdary; border-color: $colorThirdary}
+    &:hover {
+      &>.inner, &:before, &:after { background-color: $colorSecondary; border-color: $colorSecondary} 
+    }
+  }
+
+
+
+}
+
+
+
+
+.btn__ { 
+
+  font-weight: 500;
+  outline: medium none;
+  text-transform: uppercase;
+  padding:0;
+  position:relative;
+  outline: medium none; 
+  vertical-align:middle;
+  display:inline-block;
+  text-align:center;
+  border-radius: 0;
+  background-color: transparent;
+  @include transition(0.2s);
+  background-color:  transparent; 
+  height:$btn;
+  font-size:$btn_size;
+  padding-left:$btn_pd;
+  padding-right:$btn_pd;
+  border: 1px solid $btn_bd; 
+  line-height: $btn - 2 ;
+  color: $btn_cl; 
+  span { vertical-align: middle; }
+  i {   vertical-align: middle; }
+
+  &:hover, &:focus  {
+    background-color: $colorPrimary   ;
+    border-color: $colorPrimary ;
+    color: #fff !important;
+  }
+
+  /*btn-primary*/
+  &-primary{ 
+    color:#fff; 
+    background-color:$colorPrimary;
+    border-color:$colorPrimary;
+    &:hover, &:focus  { 
+      background-color:  $colorSecondary !important; 
+      border-color:  $colorSecondary !important;  
+    }
+  }
+
+  /* btn color */
+  &-white{ 
+    color:#666 ;        background-color:#fff;        border-color: #fff ; 
+  }
+
+  
+  &-outline{ 
+    color:$colorPrimary ;     background-color: transparent ;     border-color: $colorPrimary ;
+  }
+  &-outline-2{ 
+    color:  $colorSecondary;     background-color: transparent ;     border-color: $colorSecondary ;
+  }
+  &-outline-3{ 
+    color:#fff ;     background-color: transparent ;     border-color: #fff ;
+  }
+
+  &-gray{ 
+    color:#43474d;  background-color:#dcdcdc;  border-color: #dcdcdc;    
+  }
+  &-darkgray{    
+  background-color: #555555;      border-color: #555555;      color: #fff;
+  }
+  &-dark{ 
+    color:#fff;background-color:#000;border-color:#000;
+  }
+  &-success {    
+    background-color: #5cb85c;    border-color: #4cae4c;    color: #fff;
+  }  
+  &-info {    
+    background-color: #5bc0de;    border-color: #46b8da;    color: #fff;
+  }
+  &-warning {    
+    background-color: #f0ad4e;    border-color: #eea236;    color: #fff;
+  }
+  &-danger {    
+    background-color: #d9534f;    border-color: #d43f3a;    color: #fff;
+  }
+  /* btn size */
+
+
+
+  &-iconL {
+    i { margin-right: 5px; margin-left:-5px;  }    
+  }  
+  &-iconR {
+    i { margin-left: 5px;  margin-right:-5px; }    
+  }  
+
+  &-xl{
+    font-size:$btnXl_size ;
+    padding-left:$btnXl_pd;
+    padding-right:$btnXl_pd;
+    height:$btnXl;
+    line-height:$btnXl;
+  }
+
+  &-lg{
+    font-size:$btnLg_size ;
+    padding-left:$btnLg_pd;
+    padding-right:$btnLg_pd;
+    height:$btnLg;
+    line-height:$btnLg;
+  }
+  &-sm{
+    font-size:$btnSm_size ;
+    padding-left:$btnSm_pd;
+    padding-right:$btnSm_pd;
+    height:$btnSm;
+    line-height:$btnSm;
+  }
+  &-xs{ 
+    font-size:$btnXs_size ;
+    padding-left:$btnXs_pd;
+    padding-right:$btnXs_pd;
+    height:$btnXs;
+    line-height:$btnXs;
+  }
+
+  &-iconR2 { 
+    padding-right:$btn_pd+$btn;
+    &:before { position: absolute; top: 0; bottom: 0; right:$btn; content: ""; width: 1px; background-color: $btn_bd}
+    i { position: absolute; right: 0; top: 50%; width: $btn; @include translateY(-50%); }
+    &.btn-xl {
+      padding-right:$btnXl_pd+$btnXl;
+      &:before { right:$btnXl; }
+      i { width: $btnXl; }
+    }
+    &.btn-lg {
+      padding-right:$btnLg_pd+$btnLg;
+      &:before { right:$btnLg; }
+      i { width: $btnLg; }
+    }
+    &.btn-sm {
+      padding-right:$btnSm_pd+$btnSm;
+      &:before { right:$btnSm; }
+      i { width: $btnSm; }
+    }
+    &.btn-xs {
+      padding-right:$btnXs_pd+$btnXs;
+      &:before { right:$btnXs; }
+      i { width: $btnXs; }
+    }
+    &.btn-outline-2:before { background-color: $colorSecondary; }
+    &.btn-outline-3:before { background-color: #fff; }
+
+  }
+  &-iconL2 { 
+    padding-left:$btn_pd+$btn;
+    &:before { position: absolute; top: 0; bottom: 0; left:$btn; content: ""; width: 1px; background-color: $btn_bd}
+    i { position: absolute; left: 0; top: 50%; width: $btn; @include translateY(-50%); }
+    &.btn-xl {
+      padding-left:$btnXl_pd+$btnXl;
+      &:before { left:$btnXl; }
+      i { width: $btnXl; }
+    }
+    &.btn-lg {
+      padding-left:$btnLg_pd+$btnLg;
+      &:before { left:$btnLg; }
+      i { width: $btnLg; }
+    }
+    &.btn-sm {
+      padding-left:$btnSm_pd+$btnSm;
+      &:before { left:$btnSm; }
+      i { width: $btnSm; }
+    }
+    &.btn-xs {
+      padding-left:$btnXs_pd+$btnXs;
+      &:before { left:$btnXs; }
+      i { width: $btnXs; }
+    }    
+    &.btn-outline-2:before { background-color: $colorSecondary; }
+    &.btn-outline-3:before { background-color: #fff; }
+  }
+
+}
+/* /btn */
+button.btn{ line-height:normal !important}
+
+
+
+
+
+.btnT {
+  line-height: 32px;
+  display: inline-block; 
+  position: relative;  overflow: hidden;     min-width: 42px;     text-align: center;
+
+  &:before{  content: ""; position: absolute; height: 1px; left: 12px; right: 12px; background: $colorPrimary; top: 0 ; @include transition(0.2s);}
+  &:after{  content: ""; position: absolute; height: 1px; left: 12px; right: 12px; background: $colorPrimary; bottom: 0; @include transition(0.2s); }
+  .btnL:before, .btnL:after, .btnR:before, .btnR:after  {
+      content: ""; position: absolute; height: 1px; width: 36px; background-color: $colorPrimary;       @include transition(0.2s);
+  }
+  .btnL {
+    &:before { top: 0;  transform: rotate(-60deg); left: -6px;}
+    &:after { bottom: 0;  transform: rotate(60deg); left: -6px;}
+  }
+  .btnR {
+    &:before { top: 0;  transform: rotate(60deg); right: -6px;}
+    &:after { bottom: 0;  transform: rotate(-60deg); right: -6px;}
+  }
+  &>.text { display: block; padding: 0 15px;}
+
+  &-second {
+    &:before, &:after,
+    .btnL:before, .btnL:after,
+    .btnR:before, .btnR:after   { background-color: $colorSecondary}
+  }
+}
+
+
+.btnT2 {
+  line-height: 50px;
+  display: inline-block; padding: 0 35px;
+  position: relative;   margin: 50px; overflow: hidden;
+
+  &:before{  content: ""; position: absolute; height: 1px; left: 24px; right: 24px; background: #f00; top: 0 }
+  &:after{  content: ""; position: absolute; height: 1px; left: 24px; right: 24px; background: #f00; bottom: 0 }
+  .btnL:before, .btnL:after, .btnR:before, .btnR:after  {
+      content: ""; position: absolute; height: 1px; width: 35px; background-color: #f00;       
+  }
+  .btnL {
+    &:before { top: calc(0% - -12px); transform: rotate(-45deg); left: -5px;}
+    &:after { bottom: calc(0% - -12px); transform: rotate(45deg); left: -5px;}
+  }
+  .btnR {
+    &:before { top: calc(0% - -12px); transform: rotate(45deg); right: -5px;}
+    &:after { bottom: calc(0% - -12px); transform: rotate(-45deg); right: -5px;}
+  }
+}
+
+
+
+
+
+.hexagon-140 {
+  position: relative;
+  width: 140px; 
+  height: 80.83px;
+  background-color: #ffffff;
+  margin: 40.41px 0;
+  border-left: solid 2px #f2f2f2;
+  border-right: solid 2px #f2f2f2;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  display: block;
+      margin-left: 10px; 
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 98.99px;
+    height: 98.99px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 18.5025px;
+  }
+
+  &:before {
+    top: -49.4975px;
+    border-top: solid 2.8284px #f2f2f2;
+    border-right: solid 2.8284px #f2f2f2;
+  }
+
+  &:after {
+    bottom: -49.4975px;
+    border-bottom: solid 2.8284px #f2f2f2;
+    border-left: solid 2.8284px #f2f2f2;
+  }
+
+}
+
+
+

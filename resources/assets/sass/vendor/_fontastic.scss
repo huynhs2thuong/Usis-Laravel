@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "fontastic";
+    src: url("../fonts/fontastic.eot");
+    src: url("../fonts/fontastic.eot?#iefix") format("embedded-opentype"), url("../fonts/fontastic.woff") format("woff"), url("../fonts/fontastic.ttf") format("truetype"), url("../fonts/fontastic.svg#fontastic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font-family: 'fontastic';
+    font-size: inherit;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-1x {
+    font-size: 1.5em;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-facebook:before {
+  content: "\e000";
+}
+.fa-google:before {
+  content: "\e001";
+}
+.fa-angle-double-down:before {
+  content: "\e002";
+}
+.fa-angle-double-up:before {
+  content: "\e003";
+}
+.fa-angle-left:before {
+  content: "\e004";
+}
+.fa-angle-right:before {
+  content: "\e005";
+}
+.fa-times:before {
+  content: "\e006";
+}
+.fa-mail:before {
+  content: "\e008";
+}
+.fa-map:before {
+  content: "\e009";
+}
+.fa-money:before {
+  content: "\e00a";
+}
+.fa-phone:before {
+  content: "\e00b";
+}
+.fa-value-1:before {
+  content: "\e00c";
+}
+.fa-value-2:before {
+  content: "\e00d";
+}
+.fa-value-3:before {
+  content: "\e00e";
+}
+.fa-value-4:before {
+  content: "\e00f";
+}
+.fa-value-5:before {
+  content: "\e010";
+}
+.fa-value-6:before {
+  content: "\e011";
+}
+.fa-value-7:before {
+  content: "\e012";
+}
+.fa-value-8:before {
+  content: "\e013";
+}
+.fa-bars:before {
+  content: "\e014";
+}
+.fa-angle-down:before {
+  content: "\e015";
+}
+.fa-angle-up:before {
+  content: "\e016";
+}
+.fa-caret-down:before {
+  content: "\e017";
+}
+.fa-twitter:before {
+  content: "\e019";
+}
+.fa-group-burger-sandwich:before {
+  content: "\e01f";
+}
+.fa-group-khoai-tay-chien-gion:before {
+  content: "\e020";
+}
+.fa-group-phan-an-phu:before {
+  content: "\e022";
+}
+.fa-group-mon-trang-mieng:before {
+  content: "\e023";
+}
+.fa-cart:before {
+  content: "\e024";
+}
+.fa-group-mi-y:before {
+  content: "\e01b";
+}
+.fa-group-1:before {
+  content: "\e01d";
+}
+.fa-right-arrow:before {
+  content: "\e007";
+}
+.fa-bell:before {
+  content: "\e018";
+}
+.fa-check-circle:before {
+  content: "\e01e";
+}
+.fa-times-circle:before {
+  content: "\e025";
+}
+.fa-external-link:before {
+  content: "\e026";
+}
+.fa-new:before {
+  content: "\e028";
+}
+.fa-group-ga-gion-vui-ve:before {
+  content: "\e029";
+}
+.fa-group-ga-gion-cay:before {
+  content: "\e01c";
+}
+.fa-group-mon-moi-mon-ngon:before {
+  content: "\e01a";
+}
+.fa-group-khau-phan-com:before {
+  content: "\e021";
+}
+.fa-group-ga-sai-gon-sot-cay:before {
+  content: "\e027";
+}

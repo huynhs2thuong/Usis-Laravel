@@ -1,0 +1,47 @@
+.subnews {
+    padding-top: 3rem;
+    > .primary {
+        width: 70%;
+        margin: 0 auto;
+        > .title {
+            margin: 2rem 0;
+            font: 2.5rem $font-secondary;
+            color: #C91133;
+        }
+        > .row {
+            margin-bottom: 10px;
+        }
+        > .para {
+            padding: 2rem 4rem;
+            p, ul, ol {
+                margin-bottom: 15px;
+                line-height: 1.7;
+            }
+            i, em {
+                font-style: italic;
+            }
+            b, strong {
+                font-weight: bold;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@mixin subnews-sm {
+    .subnews {
+        padding-top: 0;
+        >.primary {
+            width: 90%;
+            .title {
+                font-size: 1.5em;
+            }
+            >.para {
+                padding: 0;
+            }
+        }
+    }
+}

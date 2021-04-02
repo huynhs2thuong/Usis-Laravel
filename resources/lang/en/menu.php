@@ -1,0 +1,51 @@
+<?php
+
+return array (
+  'page' => 
+  array (
+    'home' => 'Home',
+    'service' => 'Service',
+    'news' => 'News',
+    'event' => 'Events',
+    'contact' => 'Contact Us',
+    'contactus' => 'Contact Us',
+    'events' => 'Events',
+    'khach_hang_khac' => 'Other customers',
+    'customer_success' => 'Customer success',
+    'partner' => 'Partners',
+    'partner_strategy' => 'Partner strategy',
+    'project' => 'Project',
+    'project_related' => 'Other projects',
+    'projecteb5' => 'EB-5 Projects',
+    'luat_su' => 'Lawer',
+    'vui_long_nhap_thong_tin' => 'Please enter information to download the US immigration guide book!',
+    'ban_co_van' => 'ADVISORY BOARD',
+    'dang_ky_tu_van_eb5_mien_phi' => 'EB-5 FREE ADVICE REGISTRATION',
+    'tong_quan_du_an' => 'PROJECT OVERVIEW',
+    'doingu' => 'TEAM',
+    'hoatdongancu' => 'ACTIVITY',
+    'about' => 'About',
+    'group' => 'Menu',
+    'store' => 'Store',
+    'recruit' => 'Career',
+    'thankstitle' => 'Thank you',
+    'thanks1' => 'Thank you for your interest and confidence in USIS Group.',
+    'thanks2' => 'USIS has received your EB5 registration information',
+    'thanks3' => 'We will contact you as soon as possible',
+    'thanks4' => 'Best regards!',
+    'videos' => 'Activities',
+    'current_projects' => 'Current Projects',
+    'fully_subscribed' => 'Fully Subscribed'
+  ),
+  'url' => 
+  array (
+    'home' => '/en',
+  ),
+  'hoatdongancu' => 'ACTIVITY',
+  'thong_tin_chi_tiet_du_an' => 'Project Details',
+  'tien_do_du_an' => 'Project progress',
+  'doi_tac_khac' => 'OTHER PARTNERS',
+  'nhap_noi_dung' => 'Enter search content',
+  'hoatdongancukhac' => 'OTHER ACTIVITIES',
+  'tag' => 'Tag',
+);

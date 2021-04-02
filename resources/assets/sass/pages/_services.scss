@@ -1,0 +1,66 @@
+.service-entry {
+	padding: 4em 0;
+	position: relative;
+	z-index: 1;
+	> .media {
+		> .media-left {
+			padding-right: 80px;
+			> .media-object {
+				width: 350px;
+				height: auto;
+			}
+		}
+		> .media-body {
+			vertical-align: middle;
+			> h4 {
+				font-size: 2.8125em;
+				margin-top: -15px;
+				margin-bottom: 10px;
+				&.text-color-2 {
+					color: #a8b919;
+				}
+				&.text-color-3 {
+					color: $btn-group-buy-color;
+				}
+				&.text-color-4 {
+					color: #5dc6d1;
+				}
+			}
+			> p {
+				line-height: 1.7;
+				margin-bottom: 25px;
+			}
+			> .btn-color {
+				border-radius: 15px;
+				padding: 8px 30px;
+			}
+		}
+	}
+	&.odd {
+		z-index: 2;
+	}
+	&.even {
+		background: $gray;
+	}
+}
+
+@mixin services-xs {
+	.service-entry {
+		> .media {
+			> .media-left {
+				padding-right: 0;
+				> .media-object {
+					width: 100%;
+				}
+			}
+			> .media-body {
+				display: block;
+				width: 100%;
+				margin-top: 25px;
+				> h4 {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

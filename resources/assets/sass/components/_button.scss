@@ -1,0 +1,263 @@
+.btn {
+    font-family: $font-secondary;
+    transition: all 0.2s linear, visibility 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    &.m-progress {
+        position: relative;
+        color: transparent;
+        text-shadow: none;
+        pointer-events: none;
+        &:focus {
+            color: transparent;
+            text-shadow: none;
+            outline: none;
+        }
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background: transparent;
+            border: 1px solid #fff;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            box-sizing: border-box;
+            top: 50%;
+            left: 50%;
+            margin-top: -12px;
+            margin-left: -12px;
+            width: 24px;
+            height: 24px;
+            animation: ld 1s ease-in-out infinite;
+        }
+    }
+    &::after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 1;
+    }
+    &.hover,
+    &:hover {
+        color: white;
+        &::after {
+            left: 120%;
+            transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+    &:active,
+    &:focus {
+        color: white;
+        outline: none;
+    }
+}
+
+.btn-color {
+    // font-family: $font-secondary;
+    background-color: $btn-color;
+    border-color: $btn-color;
+}
+
+.btn-blue {
+    background-color: $cyan;
+    font-size: 1.5625rem;
+    padding: 0.2rem 4rem;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-orange {
+    color: black;
+    background-color: $orange-light;
+    padding: 0.2rem 1.5rem;
+    font-size: 1.125rem;
+    &:hover,
+    &:active,
+    &:focus {
+        color: black;
+    }
+}
+
+.add-to-cart {
+    background-color: $btn-color;
+    padding: 5px 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    &[disabled] {
+        cursor: not-allowed;
+        box-shadow: none;
+        opacity: .9;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.btn-checkout {
+    font-family: $font-secondary;
+    font-size: 1.3125em;
+    border: none;
+    background-color: $btn-checkout-color;
+    border-radius: 5px;
+    padding: 5px 20px;
+    max-width: 100%;
+    &[disabled] {
+        background: #eee;
+        color: black;
+        cursor: not-allowed;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.btn-group-buy {
+    background: $btn-group-buy-color;
+}
+
+.btn-share-link {
+    @extend .btn-group-buy;
+    text-transform: none;
+}
+
+.order-toggle {
+    &.hide-active {
+        cursor: pointer;
+        > .member-info {
+            display: inline-block;
+            background: #efefef;
+            border-radius: 5px;
+            color: $btn-checkout-color;
+            padding: 2.5px 5px;
+            text-transform: lowercase;
+            font-size: 0.8em;
+            margin: 0 5px 0 -15px;
+        }
+        > .fa-cart {
+            font-size: 3em;
+            vertical-align: middle;
+            margin-right: 15px;
+            transition: transform 0.2s;
+        }
+        > span {
+            font-family: $font-secondary;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.5em;
+        }
+    }
+    &.hide-no-active {
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        top: 15px;
+        transition: transform 0.2s;
+    }
+    &:hover {
+        .fa-cart {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.btn-icon {
+    margin: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+    text-align: center;
+    transition: all 0.5s;
+    > .fa {
+        line-height: 52px;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &::after {
+        content: '';
+        box-sizing: content-box;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: transform 0.5s, opacity 0.5s;
+        transform: scale(0.8);
+        opacity: 0;
+        top: -4px;
+        left: -4px;
+        padding: 4px;
+        box-shadow: 0 0 0 2px #fff;
+    }
+    &.active,
+    &:hover {
+        background: white;
+        color: $primary-color;
+        &::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+.swiper-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-button-prev.style,
+.swiper-button-next.style {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 5px 15px;
+    border-radius: 50%;
+    background: $orange-light;
+    box-shadow: none;
+    transform: translateY(-50%);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+    &.swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    &:hover {
+        box-shadow: 0 0 4px #515151;
+    }
+    > .fa {
+        font-size: 30px;
+        line-height: inherit;
+    }
+}
+
+.swiper-btn-prev {
+    @extend .swiper-button-prev.style;
+    float: left;
+    transform: none;
+    > .fa:before {
+        left: 48%;
+    }
+}
+
+.swiper-btn-next {
+    @extend .swiper-btn-prev;
+    > .fa::before {
+        left: 56%;
+    }
+}

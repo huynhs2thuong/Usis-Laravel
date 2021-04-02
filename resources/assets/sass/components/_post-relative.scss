@@ -1,0 +1,86 @@
+.post-relative {
+    padding: 0 5px;
+    margin-bottom: 30px;
+    > .title {
+        margin: 2rem 0;
+        font: 2.5rem $font-secondary;
+        color: #C91133;
+    }
+    >.slide {
+        margin: 0 auto;
+        padding: 2rem 10px 5rem;
+    }
+    .swiper-slide {
+        padding: 1rem;
+        margin-right: 3rem;
+        background-color: #F4F4F4;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+        > h3 {
+            font: 1.125rem $font-secondary;
+            //margin-bottom: 1rem;
+            color: #303030;
+            line-height: 1.4em;
+            height: 2.8em;
+            overflow: hidden;
+        }
+        > .para {
+            //white-space: nowrap;
+            overflow: hidden;
+            margin: 1rem 0;
+            font-size: 0.9375rem;
+            color: #5E5E5E;
+            line-height: 1.4em;
+            height: 4.2em;
+        }
+        &:hover {
+            > h3 {
+                color: $primary-color;
+            }
+        }
+    }
+    @include bp-small {
+        > .title {
+            font-size: 1.5em;
+        }
+        > .slide {
+            margin: -10px 5px 15px;
+            padding: 10px 10px 5rem;
+        }
+    }
+}
+
+.post-hover {
+    > figure {
+        position: relative;
+        overflow: hidden;
+        > .img-full-width {
+            margin-bottom: 1rem;
+        }
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,.2);
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+        &:hover::before {
+            animation: circle 0.7s;
+        }
+    }
+    > h3 {
+        transition: color 0.7s;
+        color: #303030;
+    }
+    &:hover {
+        > h3 {
+            color: $primary-color;
+        }
+    }
+}

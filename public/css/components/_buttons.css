@@ -1,0 +1,18 @@
+.btn { position: relative; display: inline-block; overflow: hidden; color: #fff !important; vertical-align: middle; padding: 0 15px; border: none; -webkit-box-shadow: none !important; box-shadow: none !important; min-width: 130px; border-radius: 5px; background-color: #1D3768; }
+
+.btn:hover { color: #fff; background-color: #1E2E42; }
+
+.btn-2 { background-color: #4FA7FF; }
+
+.btn-2:hover { background-color: #1E2E42; }
+
+.btn-56 { height: 56px; line-height: 56px; min-width: 165px; }
+
+.btn-white { background-color: #fff; color: #333; }
+
+.btn-white:hover { background-color: #1E2E42; color: #fff; }
+
+/* /btn */
+button.btn { line-height: normal !important; }
+
+/*# sourceMappingURL=_buttons.css.map */

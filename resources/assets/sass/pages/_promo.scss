@@ -1,0 +1,119 @@
+.page-promo {
+	> .promo-title {
+		background: url("/images/promo/header.png") center;
+		background-size: auto 100%;
+		margin: 0 0 20px;
+		> h1 {
+			color: $primary-color;
+			text-align: center;
+			margin: 60px auto 40px;
+			font-size: 2.8125em;
+		}
+	}
+	> .container {
+		> a {
+			display: block;
+			font-size: 0;
+			> img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		> .grid {
+			margin: 20px auto 3em;
+			visibility: hidden;
+			&.loaded {
+				visibility: visible;
+			}
+			> .grid-item {
+				display: block;
+				background: #E97C00;
+				> img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		@include bp-large-up {
+			width: 1210px;
+		}
+	}
+	> .title {
+        margin: 2rem 0;
+        font: 2.5rem $font-secondary;
+        color: #C91133;
+    }
+	> .promo-others {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+        > .block-item {
+	        width: calc(100%/3 - 4rem);
+	        padding: 1rem;
+	        margin-right: 3rem;
+	        background-color: #F4F4F4;
+	        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+	        &:last-child {
+	            margin-right: 0;
+	        }
+	        > h3 {
+	            font: 1.125rem $font-secondary;
+	            margin: 1rem 0;
+	            color: #303030;
+	            line-height: 1.4em;
+	            height: 2.8em;
+	            overflow: hidden;
+	        }
+	        >.para {
+	            overflow: hidden;
+	            text-overflow: ellipsis;
+	            margin: 1rem 0;
+	            font-size: 0.9375rem;
+	            color: #5E5E5E;
+	            height: 4rem;
+	        }
+	    }
+    }
+
+}
+
+@mixin promo-md {
+	.page-promo {
+		> .promo-others {
+			> .block-item {
+                width: calc(100%/3 - 20px);
+                margin-right: 20px;
+                padding: 5px;
+            }
+		}
+	}
+}
+
+@mixin promo-xs {
+	.page-promo {
+		> .container {
+			> .grid {
+				> .grid-item {
+					margin-top: 20px;
+				}
+			}
+
+		}
+		> .promo-others {
+			display: block;
+			> .block-item {
+                display: block;
+                width: 90%;
+                margin: 0 auto 2rem;
+                padding: 10px;
+                &:last-child {
+                    margin: 0 auto;
+                }
+                > h3, > .para {
+                	height: auto;
+                }
+            }
+		}
+	}
+}

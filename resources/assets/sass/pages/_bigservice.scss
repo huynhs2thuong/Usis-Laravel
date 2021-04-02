@@ -1,0 +1,39 @@
+.bigservice {
+    >.intro {
+        position: relative;
+        z-index: 1;
+        padding: 5rem;
+        background: #FAC437 url("../images/service/intro-bg.png") center center/cover no-repeat;
+        .content {
+            > h1 {
+                margin: 2rem 0;
+                font: 2.8125rem $font-secondary;
+                color: #fff;
+            }
+            >p {
+                margin: 1rem 0;
+                font-size: 0.9375rem;
+            }
+        }
+    }
+    >.service {
+        position: relative;
+        padding: 4rem 4rem 2rem;
+        background-color: #5DC6D1;
+        .item-img {
+            display: inline-block;
+        }
+        .title {
+            margin: 2rem 0;
+            font: 2.25rem $font-secondary;
+        }
+    }
+}
+
+@mixin bigservice-sm {
+    .bigservice {
+        >.intro {
+            padding: 0 1rem 2rem;
+        }
+    }
+}

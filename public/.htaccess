@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>  
+    RewriteEngine On
+    RewriteCond %{THE_REQUEST} \.html
+    RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+Options -Indexes
+
+    RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+    RewriteRule (.?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+#RewriteRule ^index.php/(.*) /$1 [R=302,L]
+
+    # RewriteRule (.?)index\.php/*(.) /$1$2 [R=301,NE,L]
+    # RewriteRule (.?)index\.php/*(.) ^/404/$ [R=301,NE,L]
+
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

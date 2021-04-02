@@ -1,0 +1,19 @@
+
+
+{
+	"sProcessing":   "Đang xử lý...",
+	"sLengthMenu":   "Số mục/trang _MENU_",
+	"sZeroRecords":  "Không tìm thấy dữ liệu",
+	"sInfo":         "Đang xem _START_-_END_ / _TOTAL_ mục",
+	"sInfoEmpty":    "Đang xem 0 trong tổng số 0 mục",
+	"sInfoFiltered": "(được lọc từ _MAX_ mục)",
+	"sInfoPostFix":  "",
+	"sSearch":       "Tìm kiếm:",
+	"sUrl":          "",
+	"oPaginate": {
+		"sFirst":    "Đầu",
+		"sPrevious": "Trước",
+		"sNext":     "Sau",
+		"sLast":     "Cuối"
+	}
+}

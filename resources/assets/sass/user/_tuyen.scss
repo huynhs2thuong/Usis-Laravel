@@ -1,0 +1,887 @@
+.select-down{
+	height: 35px;
+    -webkit-appearance: inherit;
+    appearance: inherit;
+    background-image: url(../images/icon-svg/down.svg);
+    width: 100%;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-bottom: 1px solid #9B9B9B;
+    line-height: 38px;
+    font-size: 13px;
+    padding-left: 20px;
+    .dropdown-color{
+	    position: absolute;
+	    width: 200px;
+	    right: 15px;
+    	bottom: -60px;
+    	.header{
+		    background-color: #fff;
+		    padding: 10px 15px;
+		    box-shadow: 1px 1px 6px rgba(17, 17, 17, 0.37);
+		    -webkit-box-shadow: 1px 1px 6px rgba(17, 17, 17, 0.37);
+		    -moz-box-shadow: 1px 1px 6px rgba(17, 17, 17, 0.37);
+		    border-radius: 7px;
+
+    	}
+    }
+}
+label.radio-style{
+	width: 24%;
+	margin-top: 15px;
+	&>span{
+		border: 1px solid #989898;
+	    width: 18px;
+    	height: 18px;
+    	&:before{
+    		width: 8px;
+		    height: 8px;
+		    margin-top: 4px;
+    	}
+	}
+	
+}
+
+/* module-2.php */
+.page-title{
+	.border-small{
+		&:after{
+			content: '';
+			height: 1px;
+			width: 100px;
+			background-color: #9B9B9B;
+		    display: block;
+    		margin: 40px auto 0;
+		}
+	}
+}
+.section-float{
+	.section-title{
+		float: left;
+	}
+	a{
+		display: block;
+		float: right;
+	    font-size: 13px;
+    	text-transform: uppercase;
+	}
+}
+.TOA006{
+	&.default_icon{
+		.owl-carousel{
+			.owl-nav{
+			    top: 50%;
+			    left: 0;
+			    right: 0;
+			    width: auto;
+			    div{
+			    	background-color: #fff;
+		    	    color: #CECECE;
+			    }
+			}
+		}
+	}
+}
+.TOA020{
+	background-image: url(../images/toa202.jpg);
+	background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    position: relative;
+    &:before{
+    	content: '';
+    	background-color: rgba(255, 255, 255, 0.60);
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+	h4{
+		text-transform: uppercase;
+	}
+	p{
+		line-height: 27px;
+	    margin-bottom: 50px;
+	    max-width: 450px;
+	}
+	.logo{
+		margin-bottom: 35px;
+	}
+	.logo_social{
+		a{
+			display: inline-block;
+		    max-width: 115px;
+    		min-height: 40px;
+		    margin-right: 20px;
+		}
+	}
+}
+
+/* page tu-phoi-mau-son */
+.block_style{
+	&-item{
+		margin-bottom: 30px;
+	    max-width: 265px;
+	    min-height: 200px;
+	    @include transition(.2s);
+	    &:hover{
+    	    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.38);
+	        -webkit-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.38);
+            -moz-box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.38);
+            @include transition(.2s);
+	    }
+	    img{
+	    	width: 100%;
+	    	height: auto;
+	    }
+	}
+	h4{
+	    font-size: 23px;
+	    text-transform: uppercase;
+	    margin-bottom: 45px;
+	    float: left;
+	}
+	.select_filter{
+		float: right;
+		span{
+			padding-right: 15px;
+			font-size: 18px;
+		}
+		select{
+			width: 250px;
+			font-size: 13px;
+			height: 40px;
+		}
+	}
+}
+
+/* page khuyen-mai */
+.block_regulate{
+    padding: 80px 0 50px;
+	.section-header{
+		margin-bottom: 50px;
+		.section-title{
+		    font-size: 32px;
+			text-transform: uppercase;
+		}
+		.desc{
+		    font-size: 18px;
+    		font-weight: 500;
+		}
+	}
+	blockquote{
+		border-left: 0;
+	    font-size: 27px;
+		line-height: 45px;
+		margin-top: 45px;
+		&:before{
+			content: "\201C";
+		    font-family: Georgia, serif;
+		    font-size: 70px;
+		    font-weight: bold;
+		    color: $colorPrimary;
+		    text-align: left;
+		    margin: auto;
+		    display: block;
+		    position: relative;
+    		left: -8%;
+		}
+	}
+}
+.block_level{
+	&-item{
+		background-color: #0A517B;
+		color: #fff;
+	    padding: 0 35px 20px;
+        min-height: 270px;
+		ul{
+			list-style: none;
+			li{
+				line-height: 25px;
+			}
+		}
+		.top{
+		    display: block;
+		    text-align: center;
+		    position: relative;
+		    bottom: 23px;
+		    margin-bottom: 25px;
+		}
+	}
+}
+.block_mess{
+	h4{
+		text-transform: uppercase;
+	    margin-bottom: 50px;
+	}
+}
+.block_rules{
+	padding: 70px 0 100px;
+	position: relative;
+	&:after{
+		content: '';
+		background-image: url('../images/hand-and-brush-isolated-on-white-P7D6NFU.jpg');
+		height: 400px;
+	    width: 400px;
+	    display: block;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    z-index: 10;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    background-position: bottom;
+	}
+	h4{
+		text-transform: uppercase;
+	    margin-bottom: 50px;
+	    margin-bottom: 50px;
+	}
+	span{
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 35px;
+		line-height: 30px;
+	}
+	p{
+		line-height: 27px;
+	}
+	.list_price{
+		margin-left: -35px;
+    	margin-top: 50px;
+		&-item{
+		    width: 175px;
+		    float: left;
+		    text-align: center;
+		    border-right: 1px dashed #ddd;
+		    margin-bottom: 35px;
+			div{
+				&:first-child{
+					font-size: 32px;
+    				font-weight: bold;
+    				color: $colorPrimary;
+				}
+				&:last-child{
+					font-size: 20px;
+    				
+				}
+			}
+			&:nth-child(3),
+			&:last-child{
+				border-right: 0;
+			}
+		}
+	}
+}
+
+/* page pat-trien-ben-vung */
+.block_intro{
+	line-height: 26px;
+	margin-top: 60px;
+	blockquote{
+		border-left: 0;
+		line-height: 45px;
+	    font-size: 27px;
+	    max-width: 500px;
+	    padding: 0;
+		&:after{
+			content: "\201C";
+		    font-family: Georgia, serif;
+		    font-size: 140px;
+		    font-weight: bold;
+		    color: #0A517B;
+		    text-align: left;
+		    margin: auto;
+		    display: block;
+		    position: absolute;
+		    left: -12px;
+		    opacity: 0.2;
+		    top: 27px;
+		    font-style: normal;
+		}
+	}
+}
+
+.gallery{
+	.slide{
+		.item{
+			position: relative; 
+			display: block;
+			.title{
+				font-size: 23px;
+			    text-transform: uppercase;
+			    color: #fff;
+			    position: absolute;
+			    bottom: 0;
+			    left: 30px;
+			    display: none;
+			}
+		}
+		.caption{
+			margin-top: 30px;
+			display: none;
+			p{
+				text-align: center;
+				font-size: 16px;
+    			line-height: 27px;
+			}
+			&_share{
+			    border-top: 1px solid #979797;
+			    color: #ACAFB1;
+			    font-size: 12px;
+			    text-align: center;
+		        
+		        span{
+		        	display: inline-block;
+    				padding: 20px 45px;
+		        }
+			    i{
+			    	color: #251463;
+		    	    font-size: 15px;
+    				padding-right: 5px;
+			    }
+			}
+		}
+		.owl-nav{
+		    top: 35%;
+			div{
+				text-indent: -9999px;
+				background-repeat: no-repeat;
+			    background-size: 35%;
+			    background-position: center;
+		        background-color: transparent;
+			    border: 1px solid #fff;
+			    border-radius: 50%;
+			    &:hover{
+			    	text-indent: -9999px;
+					background-repeat: no-repeat;
+				    background-size: 35%;
+				    background-position: center;
+			        background-color: transparent;
+				    border: 1px solid #fff;
+				    border-radius: 50%;
+			    }
+				&.owl-prev{
+					background-image: url('../images/icon-svg/arrow-left.svg');
+					left: 3%;
+				}
+				&.owl-next{
+					background-image: url('../images/icon-svg/arrow-right.svg');
+					right: 3%;
+				}
+			}	
+				
+		}
+		.owl-item{
+			&.active{
+				.caption{
+					display: block;
+				}
+				.title{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* page bang-mau-son-dau */
+
+.filter-product{
+	.item{
+		label{
+			&.radio{
+				width: auto;
+				margin-bottom: 15px;
+			    display: block;
+			}
+		}
+	}
+	.col{
+		width: calc(100% / 3);
+		float: left;
+	}
+	label{
+		display: block;
+	}
+	&.filter-product-radio{
+		margin: 55px 0;
+		.item{
+		    border-bottom: 1px dashed #D5D5D5;
+		    label{
+		    	&.radio{
+		    		span{
+		    			border: 1px solid #9B9B9B;
+		    			width: 17px;
+    					height: 17px;
+    					line-height: 17px;
+    					&:before{
+    						width: 7px;
+						    height: 7px;
+						    margin-top: 4px;
+    					}
+		    		}
+
+		    		input{
+		    			&:checked{
+		    				span{
+		    					border-color: #A42328;
+		    					border: 1px solid #F0F0F0;
+		    					&:before{
+		    						background-color: #d13939;
+		    					}
+		    				}
+		    			}
+		    		}
+		    		>div{
+		    			display: inline-block;
+		    			padding-left: 15px;
+					    position: relative;
+					    top: -11px;
+		    		}
+		    	}
+		    	&:hover,
+		    	&:active,
+		    	&:focus{
+		    		span{
+		    			&:before{
+		    				background-color: #d13939;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+		
+	}
+}
+
+.TOA021{
+	text-align: center;
+    border-top: 1px dashed #ddd;
+	h4{
+	    margin: 25px 0 40px;
+	}
+	.block_color{
+
+		.item{
+		    height: 100%;
+	     //    height: 65px;
+		    width: 100%;
+		    text-align: center;
+		    line-height: 65px;
+		    display: block;
+		    background-color: #d23939;
+		    border-radius: 5px;
+		    font-size: 16px;
+		    color: #fff;
+		    text-transform: uppercase;
+		    margin-bottom: 30px;
+		    position: relative;
+		    
+		}
+	}	
+		
+	.bottom{
+		.pagination{
+			text-align: left;
+			float: left;
+		}
+		
+	}
+	
+	
+	
+}
+
+.TOA026{	
+	.content input{
+		display: none;
+	}
+	.content-item{
+	    display: none;
+	   	padding: 15px;
+	    margin-top: 5px;
+	    width: 100%;
+	}
+	.content input[type="radio"]:checked+.content-item{
+		display: block;
+	}
+	.header label{
+	    padding: 10px;
+	    display: inline-block;
+	}
+
+}
+.block_dowload{
+	float: right;
+	text-align: center;
+	span{
+	    display: block;
+	    background-color: #4A4A4A;
+	    color: #fff;
+	    padding: 5px 15px;
+	    border-radius: 15px;
+	    font-size: 14px;
+	    font-weight: bold;
+	    margin-top: 10px;
+	    position: relative;
+	    &:before{
+	    	content: '';
+		    border-top: 8px solid transparent;
+		    border-right: 7px solid transparent;
+		    border-left: 7px solid transparent;
+		    border-bottom: 8px solid #4A4A4A;
+		    top: -16px;
+		    position: absolute;
+		    transform: translateX(-50%);
+		    left: 50%;
+	    }
+	}
+	&:hover{
+		span{
+			background-color: $colorPrimary;
+			&:before{
+				border-bottom: 8px solid $colorPrimary;
+			}
+		}
+	}
+}
+
+/* tu-pjoi-mau-son */
+.TOA023{
+	.item{
+	    min-height: 300px;
+    	border-radius: 5px;
+	}
+}
+
+.TOA024{
+	#sync3{
+		.block_item{
+	    	max-width: 750px;
+		    margin: 40px auto;
+		    line-height: 27px;
+		}
+	}
+	#sync1{
+		.item{
+			height: 500px;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+	#sync2{
+	    margin-top: 20px;
+	    .owl-stage-outer{
+    	    margin: auto;
+			width: 50%;
+	    }
+		.block{
+			&_item{
+				.thumb{
+					height: 85px;
+					background-size: cover;
+				    background-position: center;
+				    width: 50%;
+				    width: 165px;
+				    margin-bottom: 20px;
+				    display: inline-block;
+				}
+				.desc{
+					font-size: 13px;
+				    color: #ACAFB1;
+				    text-align: center;
+				}
+			}
+
+		}
+		.owl-item{
+			width: 165px !important;
+			position: relative;
+				&:after{
+				    content: '';
+				    border-right: 2px dashed #ACAFB1;
+				    display: block;
+				    position: absolute;
+				    right: -15px;
+				    top: 0;
+				    height: 100%;
+					visibility: hidden;
+				}
+			&.active.current{
+				&:after{
+				    visibility: visible;
+				}
+				.thumb{
+					border: 2px solid $colorPrimary;
+				}
+				
+			}
+		}
+
+	}
+}
+.mfp-bg{
+	display: none;
+}
+.popup-text{
+	.item{
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 500px;
+	}
+}
+.mfp-close-btn-in{
+	background-color: rgba(17, 17, 17, 0.59);
+}
+/* block_color */
+
+.block-color{
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+	.content input{
+		display: none;
+	}
+	.tab{
+		width: 210px;
+		background-color: #ACAFB1;
+	}
+	.content-item{
+	    display: none;
+	    position: static;
+	    background-color: #fff;
+	   	padding: 10px;
+	    margin-top: 5px;
+        width: 210px;
+		max-height: 300px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		.color{
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			margin: 3px;
+			background-color: #d13939;
+		}
+	}
+	input[type="radio"]:checked+.content-item{
+		display: block;
+	}
+	.header{
+		background-color: #ACAFB1;
+		padding: 10px 15px;
+		label{
+		    height: 25px;
+		    width: 25px;
+	        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.37);
+	        -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.37);
+	        -moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.37);
+	        border-right: 0;
+		    background-color: #d13939;
+		    margin-bottom: 0;
+		    float: left;
+		    @include transition(.2s);
+		    cursor: pointer;
+		 	&:hover{
+		 		transform: scale(1.2);
+		 		@include transition(.2s);
+		 	}
+
+		}
+	} 
+	.btn-primary{
+		position: relative;
+	    left: -40px;
+	    top: 35px;
+		&:after,
+		&:before{
+			width: 30px;
+    		height: 30px;
+		}
+	}
+	.btn{
+		&>span{
+		    padding: 0 5px;
+    		line-height: 30px;
+		}
+	}
+	.block_dowload {
+	    text-align: center;
+	    position: relative;
+    	top: 15px;
+	}
+}
+/* page 13.cam-hung-thiet-ke */
+.TOA025{
+	.item{	
+		position: relative;
+		color: #fff;
+		min-height: 500px;
+		margin-bottom: 30px;
+		.caption{
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+		    background-color: rgba(17, 17, 17, 0.76);
+		    left: 0;
+		    padding: 20px 50px;
+		}
+		.title{
+		    margin-bottom: 10px;
+		}
+		.desc{
+			overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 1;
+		    margin: 0;
+	    	line-height: 24px;
+		}
+		&.thumbnail-half{
+			min-height: 250px;
+			.caption{
+				background-color: transparent;
+			    z-index: 1;
+			    padding: 20px;
+			}
+			&:after{
+				content: '';
+				background: -webkit-linear-gradient(rgba(76, 175, 80, 0), rgba(0, 0, 0, 0.65));
+				background: -o-linear-gradient(rgba(76, 175, 80, 0), rgba(0, 0, 0, 0.65));
+			    background: -moz-linear-gradient(rgba(76, 175, 80, 0), rgba(0, 0, 0, 0.65));
+			    background: linear-gradient(rgba(76, 175, 80, 0), rgba(0, 0, 0, 0.65));
+				display: block;
+				width: 100%;
+				height: 45%;
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+
+			}
+		}
+	}
+	.color{
+		max-width: 735px;
+    	margin: 0 auto 40px;
+		&-item{
+			min-height: 80px;
+			max-width: 350px;
+			float: left;
+		    width: 50%;
+		    font-size: 18px;
+		    font-weight: 500;
+		    padding-left: 30px;
+		    &:last-child{
+		    	float: right;
+		    }
+		}
+	}
+}
+
+/* 19.dich-vu-phoi-mau-chuyen-nghiep.php */
+.desc-border{
+	max-width: 700px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px dashed #ddd;
+    line-height: 27px;
+    padding-bottom: 20px;
+    span{
+    	font-weight: bold;
+    }
+}
+.list-standard{
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+    .section-header{
+    	padding: 30px 0 0;
+    }
+	ul{
+		list-style: none;
+	    max-width: 600px;
+    	margin: auto;
+		li{
+		    margin-bottom: 15px;
+			&:before{
+				content: '';
+				background-image: url('../images/icon-svg/list.svg'); 
+				height: 30px;
+				width: 30px;
+				display: inline-block;
+				background-size: contain;
+			    background-position: bottom;
+			    background-repeat: no-repeat;
+		        margin-right: 15px;
+			}
+		}
+	}
+}
+
+.content-background{
+	position: relative;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 100px;
+	
+}
+
+.TOA027{
+	&>p{
+	    max-width: 750px;
+	    margin: 0 auto 40px;
+	    text-align: center;
+	}
+	.item{
+		background-color: $colorPrimary;
+		color: #fff;
+		padding: 25px 35px;
+		min-height: 200px;
+		span{
+			display: inline-block;
+			font-weight: 400;
+			border-bottom: 1px solid #fff;
+			padding-bottom: 10px;
+			margin-bottom: 15px;
+		}
+	}
+	.col{
+		&:nth-child(1){
+			.item{
+				background-color: #0A517B;
+			}
+		}
+
+		&:nth-child(3){
+			.item{
+				background-color: #F7931E;
+			}
+			
+		}
+	}	
+		
+}
+.send_img{
+	margin-bottom: 50px;
+	.section-header{
+		padding-top: 40px;
+	}
+	.note{
+		color: #0A517B;
+    	font-weight: bold;
+	}
+	.row-bottom{
+		text-align: center;
+    	margin-top: 30px;
+    	.block_dowload{
+			float: none;
+			display: inline-block;
+		}
+	}
+	
+}

@@ -1,0 +1,48 @@
+.modal.fade .modal-dialog {
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    transition: all 0.3s;
+    margin-bottom: 0;
+    position: relative;
+    > .btn-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: $orange-light;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 2em;
+        font-weight: bold;
+        width: 50px;
+        padding: 1px 0 3px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.modal.fade.in .modal-dialog {
+    transform: scale(1);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-open {
+    overflow: visible;
+    padding-right: 0 !important;
+}
+
+.modal-header {
+    background: $primary-color;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-body > .table {
+    margin-bottom: 0;
+    thead,
+    tfoot {
+        font-weight: bold;
+    }
+}

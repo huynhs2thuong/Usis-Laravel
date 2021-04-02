@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 70 40" style="enable-background:new 0 0 70 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#Stroke-1_1_);}
+	.st1{fill:none;stroke:url(#Stroke-3_1_);}
+	.st2{fill:none;stroke:url(#Stroke-5_1_);}
+	.st3{fill:none;stroke:url(#Stroke-8_1_);}
+</style>
+<title>Page 1</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1_1_">
+	<g id="_x30_2-About-us" transform="translate(-492.000000, -1015.000000)">
+		<g id="tam-nhin-va-su-menh" transform="translate(0.000000, 812.000000)">
+			<g id="Page-1" transform="translate(494.000000, 205.000000)">
+				<g id="Group-7" transform="translate(0.000000, 0.044049)">
+					
+						<linearGradient id="Stroke-1_1_" gradientUnits="userSpaceOnUse" x1="-266.952" y1="391.9403" x2="-267.952" y2="392.9403" gradientTransform="matrix(63.9206 0 0 -17.1706 17116.4434 6750.0898)">
+						<stop  offset="0" style="stop-color:#2767A7"/>
+						<stop  offset="1" style="stop-color:#4EA2F6"/>
+					</linearGradient>
+					<polygon id="Stroke-1" class="st0" points="0,9.8 64,0.1 12.2,17.2 					"/>
+					
+						<linearGradient id="Stroke-3_1_" gradientUnits="userSpaceOnUse" x1="-266.0575" y1="403.4056" x2="-267.0575" y2="404.4056" gradientTransform="matrix(51.7865 0 0 -36.4817 13828.0957 14763.3496)">
+						<stop  offset="0" style="stop-color:#2767A7"/>
+						<stop  offset="1" style="stop-color:#4EA2F6"/>
+					</linearGradient>
+					<polyline id="Stroke-3" class="st1" points="12.2,17.2 19.5,36.5 64,0.1 					"/>
+					
+						<linearGradient id="Stroke-5_1_" gradientUnits="userSpaceOnUse" x1="-265.388" y1="403.3228" x2="-266.388" y2="404.3228" gradientTransform="matrix(45.256 0 0 -36.4817 12058.3379 14763.3516)">
+						<stop  offset="0" style="stop-color:#2767A7"/>
+						<stop  offset="1" style="stop-color:#4EA2F6"/>
+					</linearGradient>
+					<polygon id="Stroke-5" class="st2" points="19.5,36.5 18.7,20.8 64,0.1 					"/>
+				</g>
+				
+					<linearGradient id="Stroke-8_1_" gradientUnits="userSpaceOnUse" x1="-265.0835" y1="402.7559" x2="-266.0835" y2="403.7559" gradientTransform="matrix(45.256 0 0 -33.4982 12058.3389 13526.8457)">
+					<stop  offset="0" style="stop-color:#2767A7"/>
+					<stop  offset="1" style="stop-color:#4EA2F6"/>
+				</linearGradient>
+				<polygon id="Stroke-8" class="st3" points="64,0.1 38.5,33.6 18.7,20.8 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

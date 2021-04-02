@@ -1,0 +1,100 @@
+.job-list {
+    > .items {
+        width: calc(100%/2 - 2rem);
+        margin-right: 4rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .recruit-dropdown {
+    	display: block;
+		position: relative;
+		width: 100%;
+		margin-bottom: 1.5rem;
+		border-radius: 2rem 2rem 0 0;
+		&.active {
+			background-color: #EDEDED;
+		}
+        > .item {
+            width: 100%;
+            background-color: #FAC437;
+            border-radius: 20rem;
+            position: relative;
+            align-items: center;
+            cursor: pointer;
+            &.active {
+                z-index: 10;
+            }
+            > .number {
+                font-size: 1.5rem;
+                font-weight: 700;
+                background-color: #F07D24;
+                color: #fff;
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                margin: 5px;
+                margin-right: 15px;
+                align-items: center;
+                justify-content: center;
+            }
+            > .text {
+                width: calc(100% - 9rem);
+                margin-right: 4rem;
+                font-size: 1.125rem;
+                text-align: left;
+            }
+            > .icon {
+                background-color: #FCDB68;
+                color: #fff;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+            }
+        }
+		> .content {
+			position: absolute;
+			top: 50%;
+			display: none;
+			width: 100%;
+			padding: 3rem 2rem 1rem;
+			background-color: #EDEDED;
+			border-radius: 0 0 2rem 2rem;
+			z-index: 5;
+			&.active {
+				top: 100%;
+				transform: translateY(0);
+				transition: transform 0.3s linear;
+				z-index: 5;
+			}
+			> p {
+				font-size: 0.9375rem;
+			}
+		}
+	}
+    @include bp-medium {
+        > .items {
+            width: calc(100%/2 - 15px);
+            margin-right: 15px;
+        }
+    }
+    @include bp-small {
+    	display: block;
+		margin: 0 -8px;
+		.posts-relative > & {
+			margin: 0 2px 50px;
+		}
+		>.items {
+			width: 100%;
+			.text {
+				font-size: 0.9em;
+				padding: 5px 0 2px;
+			}
+		}
+    }
+}

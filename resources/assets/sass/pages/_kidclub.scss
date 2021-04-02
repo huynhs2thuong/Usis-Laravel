@@ -1,0 +1,43 @@
+.kidclub {
+    @extend .kidparty;
+    >.intro {
+        background: #FFE8B4 url("../images/kid/pattern.svg") center/cover no-repeat;
+        .content {
+            > h1 {
+                color: #F07D24;
+            }
+        }
+        .img > .img-full-width {
+            max-width: 475px;
+        }
+    }
+    > .intro-slide {
+        background-color: #F07D24;
+        .swiper-slide {
+            > img.img-border {
+                border-color: #FFDE94;
+            }
+        }
+    }
+    > .other-slide {
+        position: relative;
+        padding: 3rem 0;
+        background-color: #FFDE94;
+        >.title {
+            color: #F07D24;
+        }
+        >.slide-container {
+            position: relative;
+            padding: 2rem 5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .swiper-slide {
+            display: block;
+            > img {
+                border: 10px solid #fff;
+                border-radius: 20px;
+            }
+        }
+    }
+}

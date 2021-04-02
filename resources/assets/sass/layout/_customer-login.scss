@@ -1,0 +1,106 @@
+#modal-login,
+#modal-reset-password {
+    .modal-content {
+        background: $modal-background;
+        border: none;
+        border-radius: 0;
+        .modal-body {
+            padding: 0;
+        }
+    }
+    form {
+        > .form-top {
+            background: #C82037;
+            padding: 0 15px 15px;
+            margin-bottom: 30px;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 18px solid transparent;
+                border-right: 18px solid transparent;
+                border-top: 20px solid #C82037;
+                left: 50%;
+                margin-left: -18px;
+                bottom: -20px;
+            }
+            > h4 {
+                font-family: $font-secondary;
+                font-size: 2em;
+                margin: -10px 0 8px;
+            }
+            > .form-group {
+                max-width: 320px;
+                margin: 7px auto;
+            }
+            .form-control {
+                border-radius: 0;
+                font-size: 15px;
+                color: black;
+                border: none;
+            }
+            label.error {
+                display: block;
+                text-align: left;
+                padding-left: 12px;
+                color: white;
+            }
+        }
+        > .form-group {
+            > button {
+                font-family: $font-secondary;
+                padding-top: 7px;
+            }
+        }
+        > .input-group {
+            width: 450px;
+            max-width: 90%;
+            margin: 0 auto 15px;
+            > .form-control {
+                background: $human-skin;
+                color: black;
+                border: none;
+                border-radius: 0;
+                height: 50px;
+                font-size: 1em;
+            }
+            > .input-group-addon {
+                font-family: $font-secondary;
+                background: $area-min-price;
+                color: black;
+                border: none;
+                border-radius: 0;
+                min-width: 125px;
+                height: 50px;
+                font-size: 1.1em;
+            }
+        }
+        > .switch-text {
+            padding: 0 30px;
+            font-size: 0.8em;
+            > a {
+                color: $primary-color;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .social-login {
+        font-size: 0;
+        margin-left: 0;
+        > li {
+            margin: 5px;
+            > .btn-icon {
+                font-size: 2rem;
+                &.active {
+                    color: $orange-light;
+                }
+            }
+        }
+    }
+}

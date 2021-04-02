@@ -1,0 +1,67 @@
+.mobile-thanks-text {
+	padding: 3rem 15px;
+	>h1 {
+		font: 2rem $font-secondary;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	>p {
+		font-size: 1rem;
+		text-align: justify;
+		text-align-last: center;
+	}
+}
+.mobile-thanks-summary {
+	background-color: #F4D069;
+	padding: 2rem;
+	>.dish {
+		align-items: center;
+		margin-bottom: 0.9375rem;
+		>.dish-title {
+			flex: 1;
+			margin-bottom: 0;
+			font: 0.9rem $font-secondary;
+			text-transform: uppercase;
+		}
+		>.dish-qty {
+			flex: 1;
+			text-align: right;
+			>input {
+				width: 25px;
+				height: 25px;
+				border: none;
+				border-radius: 5px;
+				text-align: center;
+				margin-left: 1rem;
+				font-size: 0.9375rem;
+			}
+		}
+	}
+	>.total {
+		align-items: center;
+		>.total-title {
+			flex: 1;
+			font: 0.9rem $font-secondary;
+		}
+		>.total-price {
+			flex: 2;
+			font: 1.5rem $font-secondary;
+			color: #CE181F;
+			text-align: right;
+		}
+		>p {
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+	}
+}
+.mobile-thanks-banner {
+	margin-bottom: 15px;
+	.img-responsive {
+		margin-bottom: 0.5rem;
+		border-radius: 1.25rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

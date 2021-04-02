@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7opax3');
+  src:  url('fonts/icomoon.eot?7opax3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7opax3') format('truetype'),
+    url('fonts/icomoon.woff?7opax3') format('woff'),
+    url('fonts/icomoon.svg?7opax3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-keyboard_arrow_right:before {
+  content: "\e909";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e90c";
+}
+.icon-phone2:before {
+  content: "\e908";
+}
+.icon-mail:before {
+  content: "\e902";
+}
+.icon-map:before {
+  content: "\e903";
+}
+.icon-phone:before {
+  content: "\e906";
+}
+.icon-minus:before {
+  content: "\e900";
+}
+.icon-plus:before {
+  content: "\e901";
+}
+.icon-radio-check:before {
+  content: "\e91c";
+}
+.icon-radio:before {
+  content: "\e91d";
+}
+.icon-arrow-left2:before {
+  content: "\e904";
+}
+.icon-arrow-right2:before {
+  content: "\e905";
+}
+.icon-check:before {
+  content: "\e907";
+}
+.icon-close:before {
+  content: "\e90a";
+}
+.icon-empire-state-building:before {
+  content: "\e90b";
+}
+.icon-fb:before {
+  content: "\e90e";
+}
+.icon-gogle+:before {
+  content: "\e90f";
+}
+.icon-handshake:before {
+  content: "\e910";
+}
+.icon-insurance:before {
+  content: "\e911";
+}
+.icon-libra:before {
+  content: "\e912";
+}
+.icon-passport:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e916";
+}
+.icon-skyline:before {
+  content: "\e917";
+}
+.icon-star3:before {
+  content: "\e918";
+}
+.icon-su-menh:before {
+  content: "\e919";
+}
+.icon-tam-nhin:before {
+  content: "\e91a";
+}
+.icon-twitter:before {
+  content: "\e91b";
+}

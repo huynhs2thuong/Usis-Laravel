@@ -1,0 +1,69 @@
+@include bp-large {
+    .btn:hover {
+        animation: none !important;
+    }
+    @include header-lg;
+    @include order-lg;
+    @include kidparty-lg;
+}
+
+@include bp-medium {
+    .container {
+        width: 100%;
+    }
+    @include footer-md;
+    @include home-md;
+    @include news-md;
+    @include store-sm;
+    @include recruit-md;
+    @include promo-md;
+}
+
+@include bp-small {
+    html, body {
+        font-size: 15px;
+    }
+    @include home-sm;
+    @include news-sm;
+    @include contact-xs;
+    @include subnews-sm;
+    @include store-xs;
+    @include services-xs;
+    @include about-sm;
+    @include kidparty-sm;
+    @include bigservice-sm;
+    @include checkout-sm;
+}
+
+@include bp-tiny {
+    .input-group {
+        display: block;
+        > .form-control {
+            display: block;
+        }
+    }
+    header .logo-phone {
+        padding-right: 5px;
+    }
+	.page .banner {
+        background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        > img {
+            display: none;
+        }
+        > .pop {
+            position: static;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+            //background-color: rgba(149, 14, 8, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .vertical-center {
+            margin: 0 auto;
+        }
+    }
+    @include promo-xs;
+}

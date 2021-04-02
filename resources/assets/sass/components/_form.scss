@@ -1,0 +1,153 @@
+.input {
+  background-color:#fff;
+
+  height:$btn;
+  outline:medium none;
+  padding:0;
+  resize:none;
+  vertical-align:middle;  
+  color: #333;
+  border-radius: 0;
+  font-size:$btn_size;
+
+  border: none;
+  border-bottom: 1px solid #9B9B9B; 
+  &:hover, &:focus {
+    border-color: $colorPrimary;
+  }
+
+
+  &-xs{    font-size:$btnXs_size ;  height:$btnXs; padding:0 ; }  
+  &-sm{    font-size:$btnSm_size ;  height:$btnSm; padding:0 ; }  
+  &-lg{    font-size:$btnLg_size ;  height:$btnLg;  padding:0 ; }
+  &-xl{    font-size:$btnXl_size ;  height:$btnXl; padding:0 ;}   
+}
+
+input[type=file] { padding-top: 8px;}
+textarea.input { padding-top: 10px;     line-height: normal;}
+
+//input[type="text"],input[type="email"],input[type="password"],input[type="tel"],input[type="number"] { @extend .input-box; }  
+
+
+textarea{background-color:#fff;border:1px solid #dcdcdc;outline:medium none;padding:0 10px}
+input[type="radio"],input[type="checkbox"]{height:auto!important;width:auto!important;margin:0}
+
+
+/* Select */
+
+select {   
+  height:$btn; padding:0 20px; font-size:$btn_size;  background-color:#fff;  
+  border:1px solid  $btn_bd ; font-size: 12px; border-radius: 0;
+  
+}
+select option { padding:5px;}
+
+.select {
+   -webkit-appearance: inherit; appearance: inherit; padding-right:35px;     background: #fff url(../images/arrow-select.png) no-repeat right center;
+   &-2 {border: none; border-bottom: 1px solid $btn_bd; padding-left: 0 !important;   }
+} 
+.select-xl {font-size:$btnXl_size ;  height:$btnXl; padding-left:30px;}
+.select-lg {font-size:$btnLg_size ;  height:$btnLg; padding-left: 25px;}
+.select-sm {font-size:$btnSm_size ;  height:$btnSm; padding-left:15px;}
+.select-xs {font-size:$btnXs_size ;  height:$btnXs; padding-left:10px;}
+
+
+
+
+label.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+
+  input {display:none;}
+  &>span {
+    position: absolute;  cursor: pointer;  top: 0;  left: 0;  right: 0;  bottom: 0; border: 1px solid #E6E6E6;   background-color: #fff;  
+    @include transition(0.4s);
+    &:before {
+      position: absolute;      content: "";      height: 20px;      width: 20px;      left: 4px;      top: 4px;      
+      background-color: #E6E6E6;   @include transition(0.4s);
+    }
+  }
+
+    input:checked + span {
+      background-color: $colorPrimary; border-color: $colorPrimary;
+      &:before {    @include  translateX(100%); background-color: #fff;  }
+
+    }
+
+
+
+  &-text {
+    width: 66px;
+    &>span { 
+      span { @include transition(0.2s); float: left; width: 50%; text-align: center; text-transform: uppercase; font-size: 11px; color: #59595B; line-height: 28px;}
+      .on { text-align: right; opacity: 0;}
+      .off { text-align: left;}
+
+    }
+
+    input:checked + span {
+      &:before {    @include  translateX(36px);  }
+      .on { opacity: 1; color: #fff; }
+      .off { opacity: 0 }
+    }
+
+
+  }
+
+
+  &-round {
+    &>span {   border-radius: 30px;  }
+    &>span:before {   border-radius: 50%;  }
+  }
+  &-round2 {
+    &>span,  &>span:before {   border-radius: 3px;  }
+  }  
+
+ 
+
+}
+
+
+label.checkbox {
+  position: relative; 
+  display: inline-block;
+  padding-left: 30px;
+  font-weight: normal;
+  margin:  0 0 5px;
+  input {display:none;}
+  &>span {
+    position: absolute;  cursor: pointer;  top: 0;  left: 0; color: #fff;     line-height: 16px;
+    width: 20px; height: 20px;  border: 2px solid #F0F0F0; border-radius: 3px; text-align: center; background-color: #fff;
+    &:before {
+      font-family: 'FontAwesome' !important; 
+    }
+  }
+  input:checked + span {
+    border-color: $colorPrimary; background-color: $colorPrimary;
+    &:before {      content: "\f00c";     }
+  }
+  input:disabled + span {
+    border-color: #F0F0F0 !important;
+  }
+
+  &:hover > span { border-color: $colorPrimary;}
+}
+
+
+
+label.radio {
+  @extend label.checkbox;
+  &>span { 
+    border-radius: 100%;
+    text-align: center; line-height: 20px;
+    &:before {
+      border-radius: 100%; width: 10px; height: 10px;     margin-top: 3px; background-color: #fff; display: inline-block; content: "" !important;
+    }
+  }
+  input:checked + span {
+    border-color: $colorPrimary; background-color: #fff;
+    &:before { background-color: $colorPrimary;   }
+  }
+}

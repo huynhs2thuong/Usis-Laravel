@@ -1,0 +1,1 @@
+<a class="sendcontactbutton" href="{{URL::to('/')}}/lien-he">@lang('page.sendcontact')</a>

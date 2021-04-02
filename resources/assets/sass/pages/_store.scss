@@ -1,0 +1,170 @@
+.page-store {
+	> .row {
+		&.first {
+			background: $yellow-bold;
+			font-size: 0.9375em;
+			> .col-sm-6 {
+				position: relative;
+				z-index: 1;
+				padding: 2em 15px;
+				> .form-container {
+					max-width: 550px;
+				}
+				h1 {
+					font-size: 1.2em;
+					line-height: 1.2777;
+					color: $primary-color;
+					margin-top: 17px;
+					margin-bottom: 5px;
+				}
+				h4 {
+					margin: 10px 0;
+				}
+				.form-group {
+					min-width: 35%;
+					max-width: 300px;
+				}
+				.form-control {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+				.btn-color {
+					margin-bottom: 10px;
+				}
+				&:last-child {
+					background: $modal-background;
+				}
+			}
+		}
+		&.second {
+
+			> .img-background {
+				background-image: url('../images/store/store-bg.jpg');
+				background-position: -150px center;
+			}
+			#map-canvas {
+				height: 620px;
+			}
+		}
+	}
+	.stores-container {
+		background: rgba(51,51,51,0.5);
+		width: 85%;
+		margin-top: 60px;
+		border: 5px solid rgba(204,204,203, 0.5);
+		border-right: none;
+		border-bottom: none;
+		border-top-left-radius: 20px;
+		padding: 0 0 0 12%;
+		> .stores-inner {
+			margin: 30px 0;
+			height: 495px;
+			overflow-y: auto;
+			overflow-x: hidden;
+			line-height: 1.53125em;
+			.store-entry {
+				padding-right: 16%;
+				padding-bottom: 30px;
+				min-height: 150px;
+				cursor: pointer;
+				transition: color 0.2s linear;
+				> h4 {
+					margin-bottom: 15px;
+					+ p {
+						min-height: 3.0625em;
+					}
+				}
+				> p {
+					margin: 7px 0 0;
+				}
+				&:last-child {
+					padding-bottom: 0;
+					min-height: 0;
+				}
+				&:hover {
+					color: $yellow-bold;
+				}
+			}
+		}
+	}
+}
+
+.gm-style-iw {
+	> div {
+		display: block !important;
+		max-width: none !important;
+		font-size: 0;
+	}
+	+ div {
+		display: none;
+	}
+}
+
+@mixin store-sm {
+	.page-store {
+		> .row {
+			&.second {
+				#map-canvas {
+					height: 515px;
+				}
+			}
+		}
+		.stores-container {
+			width: 95%;
+			padding-left: 15px;
+			> .stores-inner {
+				height: 390px;
+				> .store-entry {
+					padding-right: 15px;
+				}
+			}
+
+		}
+	}
+}
+
+@mixin store-xs {
+	.page-store {
+		> .row {
+			&.first {
+				display: block;
+				font-size: 1em;
+				> .col-sm-6 {
+					&:first-child {
+						padding-top: 10px;
+						padding-bottom: 15px;
+						> .form-container {
+							max-width: none;
+							text-align: center;
+						}
+						.form-group {
+							margin: 0 auto;
+						}
+					}
+					&.text-center {
+						padding-top: 1.5em;
+					}
+				}
+
+			}
+			&.second {
+				.stores-container {
+					margin-top: 30px;
+				}
+				#map-canvas {
+					height: auto;
+					padding-bottom: 100%;
+				}
+			}
+
+		}
+		.stores-container {
+			> .stores-inner {
+				height: 305px;
+			}
+		}
+		> .visible-xs {
+			padding: 2em 15px;
+		}
+	}
+}

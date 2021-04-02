@@ -1,0 +1,78 @@
+.page-lien-he {
+	background-color: $ffde94-color;
+	> .max-width {
+		padding: 5.12% 15px;
+		> h1 {
+			color: black;
+			padding: 0;
+			margin-bottom: 0.8em;
+		}
+		.contact-info {
+			> .media {
+				margin-top: 20px;
+			}
+			.media-left {
+				padding-right: 15px;
+			}
+		}
+		.contact-form {
+			> form {
+				padding-top: 20px;
+			}
+			.info-message {
+				width: 100%;
+				min-height: 5rem !important;
+				overflow: visible;
+			}
+			.btn-submit {
+				border: 1px solid #c91133;
+				border-radius: 20px;
+				font-size: 0.875rem;
+				font-family: $font-secondary;
+				background-color: #c91133;
+				color: #fff;
+				min-height: 2.4375rem;
+				padding: 0 20px;
+			}
+			.form-control {
+				color: black;
+				border: 1px solid #fac437;
+				background-color: #fac437;
+				border-radius: 15px;
+				min-height: 2.4375rem;
+			}
+			.col-sm-6 {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	> .map-container {
+		position: relative;
+		> #map-overlay {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		> #map {
+			display: block;
+		}
+	}
+}
+
+@mixin contact-xs {
+	.page-lien-he {
+		> .max-width {
+			.contact-info {
+				margin-bottom: 40px;
+			}
+		}
+		> .map-container {
+			> #map {
+				height: 300px
+			}
+		}
+	}
+}
